@@ -10,7 +10,7 @@ const Home = () => {
     const user = { name, email };
     console.log(user);
 
-    fetch('http://localhost:5000/users',{
+    fetch('https://simple-crud-server-self.vercel.app',{
       method: "POST",
        headers: {
       "Content-Type": "application/json"},

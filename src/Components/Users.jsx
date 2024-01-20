@@ -7,7 +7,8 @@ const Users = () => {
   const [users,setUsers]=useState(loadedUsers)
   const handleDelete = _id => {
     console.log('delete', _id);
-    fetch(`http://localhost:5000/users/${_id}`, {
+    fetch(`https://simple-crud-server-self.vercel.app/${_id}`,{
+      
       method: 'DELETE',
 
     })
